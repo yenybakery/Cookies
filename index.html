@@ -4,100 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yeny Bakery - Roti & Kue Lezat</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            color: #A0522D; /* SaddleBrown */
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-        .contact-info {
-            text-align: center;
-            margin: 20px 0;
-            padding: 15px;
-            background-color: #FFE4B5; /* Moccasin */
-            border-radius: 5px;
-        }
-        .contact-info a {
-            color: #A0522D;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 5px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #777;
-        }
-        /* Styling untuk gambar produk (jika ada) */
-        .product-image {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            display: block;
-            margin: 15px auto;
-            border-radius: 5px;
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
 <body>
-    <div class="container">
-        <h1>Selamat Datang di Yeny Bakery!</h1>
-        <p>Kami menyediakan berbagai macam roti dan kue yang lezat, dibuat dengan bahan-bahan berkualitas tinggi dan penuh cinta. Temukan kelezatan di setiap gigitan!</p>
-
-        <img src="https://via.placeholder.com/400x200?text=Gambar+Roti+Yeny+Bakery" alt="Aneka Roti Yeny Bakery" class="product-image">
-        <p style="text-align: center; font-style: italic; font-size: 0.9em;">(Ganti placeholder ini dengan gambar produk aslimu)</p>
-
-        <h2>Produk Kami</h2>
-        <ul>
-            <li><strong>Roti Manis</strong> - Berbagai varian rasa dan isian.</li>
-            <li><strong>Roti Tawar</strong> - Lembut dan cocok untuk segala sajian.</li>
-            <li><strong>Donat</strong> - Donat empuk dengan aneka topping menggoda.</li>
-            <li><strong>Bolu</strong> - Bolu lembut untuk acara spesial atau camilan.</li>
-            <li><strong>Kue Kering</strong> - Pilihan kue kering renyah untuk teman minum teh.</li>
-            <li>Dan masih banyak lagi kreasi lezat lainnya!</li>
-        </ul>
-
-        <div class="contact-info">
-            <h2>Pesan Sekarang!</h2>
-            <p>Untuk pemesanan, informasi lebih lanjut, atau pertanyaan, silakan hubungi kami melalui WhatsApp:</p>
-            <p><strong><a href="https://wa.me/628817622762" target="_blank">08817622762</a></strong></p>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Yeny Bakery">
+                </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                    <li><a href="#location">Lokasi</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <h2>Lokasi Kami</h2>
-        <p>Kunjungi toko kami di:</p>
-        <p><strong>Jl. Jendral Sudirman Rt.5 Rw.1 Berkoh Purwokerto Selatan (53146)</strong></p>
-        <p>Kami tunggu kedatanganmu!</p>
-    </div>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h1>Selamat Datang di Yeny Bakery!</h1>
+                <p>Kami menyediakan berbagai macam roti dan kue yang lezat, dibuat dengan bahan-bahan berkualitas tinggi dan penuh cinta. Temukan kelezatan di setiap gigitan!</p>
+                <a href="#contact" class="button primary-button">Pesan Sekarang!</a>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <div class="container">
+                <h2>Produk Pilihan Kami</h2>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/300x200?text=Roti+Manis" alt="Roti Manis">
+                        <h3>Roti Manis</h3>
+                        <p>Berbagai varian rasa dan isian yang menggoda selera.</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/300x200?text=Donat+Empuk" alt="Donat Empuk">
+                        <h3>Donat Empuk</h3>
+                        <p>Donat lembut dengan aneka topping dan glaze favorit.</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/300x200?text=Bolu+Lembut" alt="Bolu Lembut">
+                        <h3>Bolu Lembut</h3>
+                        <p>Bolu klasik dan modern, cocok untuk segala acara.</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/300x200?text=Kue+Kering" alt="Kue Kering">
+                        <h3>Kue Kering</h3>
+                        <p>Pilihan kue kering renyah untuk teman minum teh atau kopi.</p>
+                    </div>
+                </div>
+                <p class="more-products">Dan masih banyak lagi kreasi lezat lainnya yang menunggu Anda!</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Hubungi Kami</h2>
+                <p>Untuk pemesanan atau informasi lebih lanjut, silakan hubungi kami melalui WhatsApp:</p>
+                <p class="whatsapp-number">
+                    <a href="https://wa.me/628817622762" target="_blank">08817622762</a>
+                </p>
+                <p>Kami siap melayani Anda!</p>
+            </div>
+        </section>
+
+        <section id="location" class="location-section">
+            <div class="container">
+                <h2>Lokasi Kami</h2>
+                <p>Kunjungi toko kami di:</p>
+                <address>
+                    <strong>Jl. Jendral Sudirman Rt.5 Rw.1 Berkoh Purwokerto Selatan (53146)</strong>
+                </address>
+                <p class="map-link">
+                    <a href="https://maps.app.goo.gl/YOUR_Maps_LINK_HERE" target="_blank">Lihat di Google Maps</a>
+                    </p>
+                <p>Kami tunggu kedatanganmu!</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Yeny Bakery. Semua Hak Dilindungi.</p>
+        <div class="container">
+            <p>&copy; 2025 Yeny Bakery. Semua Hak Dilindungi.</p>
+        </div>
     </footer>
 </body>
 </html>
